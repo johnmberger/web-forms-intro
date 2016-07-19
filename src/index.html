@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Forms Intro</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kVo/Eh0sv7ZdiwZK32nRsp1FrDT3sLRLx3zVpSSTI9UdO5H02LJNLBg5F1gwvKg0" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="col-md-12">
+      <h1>Form</h1>
+    </div>
+    <form class="col-md-6">
+      <fieldset class="form-group">
+        <label for="name">Name:</label>
+        <input id="name" name="name" class="form-control" type="text" placeholder="Please enter name" autofocus>
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="url">Link:</label>
+          <input id="url" name="link" class="form-control" type="url" placeholder="Please enter url">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" class="form-control" name="description" rows="5"></textarea>
+      </fieldset>
+      <input class="btn btn-primary btn-block" type="submit" name="submit">
+    </form>
+    <div class="results col-md-6"></div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
